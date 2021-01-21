@@ -6,12 +6,10 @@
   --tertiary-text-color: #ffffff;
   --logo-color: #000000;
   --accent-color: #2196f3;
-  --contacts-footer-color: ;
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --tertiary-background-color: #f5f4fa;
   --border-header-color: #ececec;
-  --border-projects-list-color: #eeeeee;
   --content-hero-background-color: #c4c4c4;
   --content-hero-gradient-color: rgba(47, 48, 58, 0.4);
   --hero-button-hover-background-color: #188ce8;
@@ -22,6 +20,7 @@
   --footer-links-background-color: rgba(255, 255, 255, 0.1);
   --backdrop-background-color: rgba(0, 0, 0, 0.2);
 
+  --border-projects-list-color: #eeeeee;
   --project-overlay-background-color: rgba(33, 150, 243, 0.9);
 }
 body {
@@ -508,7 +507,7 @@ footer {
   align-items: baseline;
 }
 .logo-address {
-  margin-right: 70px;
+  margin-right: 85px;
 }
 /** Лого  */
 .logo-footer {
@@ -544,10 +543,14 @@ footer {
 
   transition: color 250ms var(--cubic-bezier);
 }
-/** Соцсети */
-.join-title {
+/** Соцсети и подписка */
+.join {
+  margin-right: 93px;
+}
+.join-title,
+.subscribe-title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 
   color: var(--tertiary-text-color);
 
@@ -558,7 +561,7 @@ footer {
 .join-social-links {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
@@ -585,6 +588,58 @@ footer {
 .join-social-links .link-icon {
   width: 20px;
   height: 20px;
+
+  fill: currentColor;
+}
+/** Подписка */
+.subscribe-form {
+  display: flex;
+  width: 570px;
+  margin-top: 20px;
+}
+.subscribe-form .email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: #ffffff;
+  background-color: transparent;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.subscribe-form .email::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 16px;
+  line-height: 1.25;
+}
+.subscribe-form .submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+
+  color: #ffffff;
+  background-color: #2196f3;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.send-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 
   fill: currentColor;
 }
