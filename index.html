@@ -328,6 +328,7 @@
 		</main>
 		<footer>
 			<div class="container footer-flex">
+				<!--? Лого, адрес и контакты -->
 				<div class="logo-address">
 					<a class="logo-footer notunderline " href="./index.html"><span class="logo-first-part">Web</span>Studio</a> 
 					<address class="address-contacts">
@@ -344,6 +345,7 @@
 						</ul>
 					</address>
 				</div>
+				<!--? Соцсети -->
 				<div class="join">
 					<p class="join-title upcase">Присоединяйтесь</p>
 					<ul class="join-social-links nolist">
@@ -377,6 +379,19 @@
 						</li>
 					</ul>
 				</div>
+				<!--? Подписка на рассылку -->
+				<div class="subscribe">
+					<p class="subscribe-title upcase">Подпишитесь на рассылку</p>
+					<form class="subscribe-form js-speaker-form">
+						<input class="email" type="email" name="email" placeholder="E-mail">
+						<button class="submit" type="submit">
+							Подписаться
+							<svg class="send-icon">
+								<use href="./images/sprite.svg#send"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
 			</div>
 		</footer>
 		<!--? Модальное окно -->
@@ -390,6 +405,7 @@
 			</div>
 		</div>
 		<script src="./js/header.js"></script>
+		<script src="./js/submit.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>
