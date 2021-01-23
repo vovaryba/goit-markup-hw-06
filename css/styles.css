@@ -633,6 +633,8 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
 }
 .submit-icon {
   width: 24px;
@@ -702,7 +704,7 @@ footer {
 .modal-close:focus > .close-icon {
   color: var(--accent-color);
 }
-.close-icon {
+.modal-close .close-icon {
   width: 11px;
   height: 11px;
 
@@ -757,7 +759,7 @@ footer {
   cursor: pointer;
 }
 .form-input:focus-within,
-.comment:focus-within {
+.form-comment:focus-within {
   border-color: var(--accent-color);
 }
 .form-input:focus-within + .form-icons {
@@ -774,7 +776,7 @@ footer {
 
   fill: currentColor;
 }
-.comment {
+.form-comment {
   height: 120px;
   padding: 12px 16px;
   border: 1px solid var(--form-input-border-color);
@@ -783,22 +785,22 @@ footer {
 
   cursor: pointer;
 }
-.comment::placeholder {
+.form-comment::placeholder {
   color: var(--comment-placeholder-color);
 
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.mailing {
+.call-back-form .mailing {
   position: relative;
   margin-bottom: 30px;
   margin-left: 36.38px;
 }
-.form-contract {
+.call-back-form .contract {
   cursor: pointer;
 }
-.form-contract::after {
+.call-back-form .contract::after {
   position: absolute;
   top: 50%;
   left: -24.38px;
@@ -811,7 +813,7 @@ footer {
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
 }
-.checkbox:checked + .form-contract::after {
+.checkbox:checked + .contract::after {
   border-color: transparent;
   background-color: var(--accent-color);
   background-image: url(../images/vector.svg);
