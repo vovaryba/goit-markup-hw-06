@@ -797,10 +797,10 @@ footer {
   margin-bottom: 30px;
   margin-left: 36.38px;
 }
-.call-back-form .contract {
+.call-back-form .consent {
   cursor: pointer;
 }
-.call-back-form .contract::after {
+.call-back-form .consent::after {
   position: absolute;
   top: 50%;
   left: -24.38px;
@@ -813,13 +813,16 @@ footer {
   border: 2px solid var(--secondary-text-color);
   border-radius: 2px;
 }
-.checkbox:checked + .contract::after {
+.checkbox:checked + .consent::after {
   border-color: transparent;
   background-color: var(--accent-color);
   background-image: url(../images/vector.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.call-back-form .contract {
+  color: var(--accent-color);
 }
 .call-back-form .submit {
   display: block;
