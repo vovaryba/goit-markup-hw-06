@@ -386,7 +386,7 @@
 						<input class="email" type="email" name="email" placeholder="E-mail">
 						<button class="submit" type="submit">
 							Подписаться
-							<svg class="send-icon">
+							<svg class="submit-icon">
 								<use href="./images/sprite.svg#send"></use>
 							</svg>
 						</button>
@@ -402,6 +402,47 @@
 						<use href="./images/sprite.svg#close"></use>
 					</svg>
 				</button>
+				<p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+				<form class="call-back-form js-speaker-form">
+					<div class="form-field">
+						<label class="form-label" for="name">Имя</label>
+						<div class="form-input-icons">
+							<input class="form-input" type="text" name="name" id="name">
+							<svg class="form-icons">
+								<use href="./images/sprite.svg#person"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="form-field">
+						<label class="form-label" for="tel">Телефон</label>
+						<div class="form-input-icons">
+							<input class="form-input" type="tel" name="tel" id="tel">
+							<svg class="form-icons">
+								<use href="./images/sprite.svg#phone"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="form-field">
+						<label class="form-label" for="email">Почта</label>
+						<div class="form-input-icons">
+							<input class="form-input" type="email" name="email" id="email">
+							<svg class="form-icons">
+								<use href="./images/sprite.svg#email"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="form-field">
+						<label class="form-label" for="comment">Комментарий</label>
+						<textarea class="comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
+					</div>
+					<div class="mailing">
+						<input class="checkbox hidden" type="checkbox" name="checkbox" id="checkbox">
+						<label class="form-contract" for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+					</div>
+					<div class="button-align">
+						<button class="send" type="submit">Отправить</button>
+					</div>
+				</form>
 			</div>
 		</div>
 		<script src="./js/header.js"></script>
